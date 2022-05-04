@@ -28,8 +28,12 @@
 
         <!-- TODO: Remove the next paragraph and use the `form` object passed in 
             from the route to render a form. -->
-        <p><em>Form fields go here!</em></p>
+        <!-- <p><em>Form fields go here!</em></p> -->
 
+          {{ form.title.label }}
+          {{ form.title(class="title-input") }}
+          {{ form.address.label }}
+          {{ form.address(class="address-input") }}
         <input type="submit" value="Submit">
     </fieldset>
 </form>
